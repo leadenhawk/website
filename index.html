@@ -1,10 +1,108 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title></title>
-  </head>
-  <body>
-    <h1>title</h1>
-    <p>paragraph </p>
-  </body>
-</html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <title>website</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .grid{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:  "hd       hd"
+                              "green    green"
+                              "white    white"
+                              "grey     grey"
+                              "triple   triple"
+                              "sanity   sanity"
+                              "contact  contact"
+                              "ft       ft";
+      }
+
+      header{
+        grid-area: hd;
+        background: url("https://pixabay.com/get/ed31b10a2af41c22d9584518a33219c8b66ae3d019b0174291f2c578/utah-440520_1920.jpg");
+        height: 710px;
+        background-size: cover;
+
+        font-family: 'Roboto Condensed', sans-serif;
+        color: white;
+        text-align: center;
+      }
+
+      /* Dramatically engage paragraph */
+      #dram {
+        font-size: 100px;
+        line-height: 350px;
+      }
+
+      /* Objectively... paragraph */
+      #obje {
+        font-size: 30px;
+      }
+
+      #green{
+        grid-area: green;
+      }
+
+      #white{
+        grid-area: white;
+        background-color: yellow;
+      }
+
+      #grey{
+        grid-area: grey;
+        background-color: grey;
+      }
+
+      #triple{
+        grid-area: triple;
+        background-color: pink;
+      }
+
+      #sanity{
+        grid-area: sanity;
+        background-color: crimson;
+      }
+
+      #contact{
+        grid-area: contact;
+        background-color: purple;
+      }
+
+      footer{
+        grid-area: ft;
+      }
+
+    </style>
+</head>
+<body>
+  <div class="grid">
+    <header>
+      <p id="dram">Dramatically Engage</p>
+      <p id="obje">Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+    </header>
+      <div id="green">
+        Green
+      </div>
+      <div id="white">
+        White
+      </div>
+      <div id="grey">
+        Grey
+      </div>
+      <div id="triple">
+        Triple
+      </div>
+      <div id="sanity">
+        Sanity
+      </div>
+      <div id="contact">
+        Contact
+      </div>
+    <footer>Footer</footer>
+  </div>
+</body>
